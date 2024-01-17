@@ -27,7 +27,6 @@ public class DesignTacoController {
         return "design";
     }
 
-    // TODO Converters, orders/current controller
     @PostMapping
     public String processTaco(@Valid Taco taco, @ModelAttribute TacoOrder tacoOrder, Errors errors) {
         if (errors.hasErrors()) {
